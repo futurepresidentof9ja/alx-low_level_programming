@@ -6,10 +6,9 @@
  *Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
-	char str[] = ("Programming is like building a multilingual puzzle\n");
-	
-	puts(str); /*writing the string to stdout*/
+	puts("Programming is like building a multilingual puzzle");
+	return(0);
+       	/*writing the string to stdout*/
 }
-	    return (0);

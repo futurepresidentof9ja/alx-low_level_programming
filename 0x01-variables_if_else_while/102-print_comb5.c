@@ -1,28 +1,25 @@
 #include <stdio.h>
-
 /**
- *  *   * main - Prints 3 combination of numbers
- *   *     *
- *    *       * Return: Always (Success)
+ *  *  * main - prints all possible combinations of two two-digit numbers
+ *   *   *
+ *    *    * Return: Always (Success)
  *     **/
 int main(void)
-
 {
-	int i, k;
-
-for (i = 0; i <= 100; c++)
+int i, k;
+for (i = 0; i <= 100; i++)
 {
-for (k = 0; k <= 100; k++)
+for (k = 0; k <= 100; k++) 
 {
-if (i < k);
+putchar((i / 10) + '0');
+putchar((i % 10) + '0');
+putchar(' ');
+putchar((k / 10) + '0');
+putchar((k % 10) + '0');
+if (!(i == 99 && k == 100))
 {
-putchar((i / 10) + 48);
-putchar((i % 10) + 48);
 putchar(',');
 putchar(' ');
-}
-}
-}
 }
 }
 }

@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /*
- *  * main -Entry point of the program
+ *  * Program that prints _putchar, followed by a new line
  *   *
  *    * Return: Always 0 (Success)
  *     */

@@ -5,21 +5,26 @@
 *
 * Return: address of s
 */
-char *rot13(char *s)
+char *rot13(char *str)
 {
 int i, j;
-char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-for (i = 0; *(s + i); i++)
+char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+i = 0;
+while (str[i] != '\0')
 {
-for (j = 0; j < 52; j++)
+j = 0;
+while (alpha[j] != '\0')
 {
-if (a[j] == *(s + i))
+if (str[i] == alpha[j])
 {
-*(s + i) = b[j];
+str[i] = rot[j];
 break;
-}	
 }
+j++;
 }
-return (s);
+i++;
+}
+return (str);
 }

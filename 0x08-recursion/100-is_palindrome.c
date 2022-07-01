@@ -1,35 +1,55 @@
 #include "main.h"
 
 /**
-* check_palindrome - checks to see if a string is a palindrome
-* @l: left hand index
-* @r: right hand index
-* @p: possible palindrome
-* 
-* Return: 1 if palindrome 0 if not
+* long_1 - main - check the code
+* @s: number
+*
+* Return: Always 0.
 */
 
-int check_palindrome(int l, int r, char *p)
+int long_1(char *s)
 {
-if (l >= r)
-return (1);
-else if (p[l] != p[r])
+if (*s != '\0')
+{
+return (1 + long_1(s + 1));
+}
 return (0);
-else
-return (check_palindrome(l + 1, r - 1, p));
 }
 
 /**
-* is_palindrome - states if a string is a palindrome
-* @s: string to check
+* compare - main - check the code
+* @s: number
+* @l: lenght
 *
-* Return: 1 if palindrome, 0 if not
+* Return: Always 0.
+*/
+
+int compare(char *s, int l)
+{
+if (l <= 0)
+{
+return (1);
+}
+if (*s == *(s + (l - 1)))
+{
+return (compare(s + 1, l - 2));
+}
+else
+{
+return (0);
+}
+}
+
+/**
+* is_palindrome - main - check the code
+* @s: character
+*
+* Return: Always 0.
 */
 
 int is_palindrome(char *s)
 {
-int i;
-
-i = _strlen(s) - 1;
-return (check_palindrome(0, i, s));
+int l;
+l = long_1(s);
+return (compare(s, l));
 }

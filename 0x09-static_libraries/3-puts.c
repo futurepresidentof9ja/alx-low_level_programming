@@ -3,6 +3,7 @@
 * _puts - updates the value it points to to 98
 * @str: character value.
 */
+
 void _puts(char *str)
 {
 int i;

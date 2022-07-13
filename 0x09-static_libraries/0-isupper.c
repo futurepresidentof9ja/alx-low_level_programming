@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 #include "main.h"
 #include <ctype.h>
 /**
@@ -13,7 +12,7 @@ if (c >= 65 && c <= 90)
 return (1);
 return (0);
 }
-=======
+
 #include "main.h"
 #include <ctype.h>
 /**
@@ -28,4 +27,4 @@ if (c >= 65 && c <= 90)
 return (1);
 return (0);
 }
->>>>>>> Stashed changes
+

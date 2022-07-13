@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 #include "main.h"
 /**
 * _memset - fills memory with constant byte
@@ -18,7 +17,7 @@ i++;
 }
 return (s);
 }
-=======
+
 #include "main.h"
 /**
 * _memset - fills memory with constant byte
@@ -38,4 +37,3 @@ i++;
 }
 return (s);
 }
->>>>>>> Stashed changes

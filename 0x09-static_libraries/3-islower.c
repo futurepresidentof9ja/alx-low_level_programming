@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 #include "main.h"
 /**
 * _islower - check if character is lower case
@@ -10,16 +9,3 @@ int _islower(int c)
 {
 return (c >= 'a' && c <= 'z');
 }
-=======
-#include "main.h"
-/**
-* _islower - check if character is lower case
-*
-* @c: character to be checked
-* Return: 1 if lowercase 0 otherwhise
-*/
-int _islower(int c)
-{
-return (c >= 'a' && c <= 'z');
-}
->>>>>>> Stashed changes
